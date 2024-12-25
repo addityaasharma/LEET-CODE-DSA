@@ -1,0 +1,16 @@
+// program to return index of two numbers who matches to target value i,e array=[2,7,11,15]   target==9; output index=0,1
+const nums=[2,11,7,15];
+let target =9;
+const numd=(num)=>{
+    let len=num.length;
+    for(let i=0;i<len;i++){
+        for(j=i+1;j<len;j++){
+            if(num[i]+num[j]==target){
+                console.log(`[${[i]},${[j]}]`);
+                break;
+            }
+    }
+    }
+        
+};
+numd(nums);
