@@ -1,0 +1,20 @@
+// program to return the triplets whose sum is equal to 0 but numbers should not be repetative
+// val[i]!=val[j] && val[i]!=val[k] && val[j]!=val[k]
+
+const nums = [-1,0,1,2,-1,-4];
+target=0;
+const returnArr=(val)=>{
+    for(let i=0;i<val.length;i++){
+        for(let j=i+1;j<val.length;j++){
+            for(let k=j+1;k<val.length;k++){
+                if(val[i]+val[j]+val[k]==target){
+                    if(val[i]!=val[j]!=val[k]){
+                        console.log(`(${val[i]})+(${val[j]})+(${val[k]})=${target}`)
+                    }
+                }
+            }
+        }
+    }
+}
+
+returnArr(nums)
