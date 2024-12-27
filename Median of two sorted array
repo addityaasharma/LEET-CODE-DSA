@@ -1,0 +1,15 @@
+// program to give the median of the two sorted array
+
+const arr1=[1,2];
+const arr2=[3,4];
+const median=(part1,part2)=>{
+    let sum=0;
+   part1.push(part2);
+  let newArr=(part1.flat());
+    for(let i=0;i<newArr.length;i++){
+        sum=sum+newArr[i];
+    }
+    let medianValue=sum/2;
+    console.log(`Median value of this two array is ${medianValue}`);
+}
+median(arr1,arr2);
